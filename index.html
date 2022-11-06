@@ -11,19 +11,35 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav flex justify-between">
-            <div class="flex-1 nav__title  ">
-                <h1 class="title md:ml-10">Dulce Tentacion</h1>
+        <nav class="nav ">
+            <div class="w-4/5 h-full mx-auto flex justify-between">
+                <div class="">
+                    <h1 class="title md:ml-10">Dulce Tentación</h1>
+                </div>
+                <div class="w-3/6 nav-menu">
+                    <ul class="flex flex-row justify-end  items-center h-full" >
+                        <li class="nav-btn   mx-4 px-2" >Ingresar</li>
+                        <li class="nav-btn mx-4 px-2" >Pedidos</li>
+                        <li class="nav-btn mx-4 px-2">Menu</li>
+                    </ul>
+                </div>
+                <div class="md:hidden flex justify-center items-center">
+                    <i id="bx-menu" class='text-3xl bx bx-menu'></i>
+                </div>    
             </div>
-            <div class="flex-none w-3/6 nav-menu">
-                <ul class="flex flex-row justify-end  items-center h-full" >
-                    <li class="nav-btn mx-4 px-2" >Ingresar</li>
-                    <li class="nav-btn mx-4 px-2" >Pedidos</li>
-                    <li class="nav-btn mx-4 px-2">Menu</li>
-                </ul>
-            </div>
-            <div class="flex flex-1 md:hidden justify-center items-center">
-                <i class='text-3xl bx bx-menu'></i>
+            <!-- 
+                =========== Menu Hambureguesa 🍔==========
+             -->
+
+             <!-- lleva nav-menu-burger -->
+            <div id="menu-burger" class="nav-menu-burger mt-8  ">
+                <div class="w-4/5 h-full mx-auto flex items-center justify-center">
+                    <ul >
+                        <li class="nav-btn my-5 ">Ingresar</li>
+                        <li class="nav-btn my-5 ">Pedidos</li> 
+                        <li class="nav-btn my-5 ">Menu</li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -47,10 +63,10 @@
                           alias veritatis consectetur voluptate autem earum 
                           asperiores ut tempore porro quo.</p>
                       
-                         <button class="btn-menu">MENU</button>
+                         <button class="btn-menu ">MENU</button>
                     </div>
                 </div>
-                <div class="md:flex-1">
+                <div class="md:flex-1 container-image-cake">
                     <img src="root/asset/img/quokkabottles-qXT5Xr9bhWs-unsplash.jpg" alt="">
                </div>
            </div>
@@ -130,10 +146,12 @@
              <a class="link" href="https://unsplash.com/photos/VsFpkvPqXzc" target="_blank">Imagen de pastel boda</a>
              <a class="link" href="https://unsplash.com/photos/qXT5Xr9bhWs" target="_blank">Imagen de patel Cumpleaños</a>
              <a class="link" href="" target="_blank">Imagen de pastel fondo</a>
-             <a class="link" href="https://boxicons.com/?query=github" target="_blank">Iconos de boxicons</a>
+             <a class="link" href="https://boxicons.com/?query=github" target="_blank">Iconos de BoxIcons</a>
              <a class="link" target="_blank" href="https://tailwindcss.com">Tailwind CSS</a>
              <a class="link" target="__blank" href="https://github.com/floressdi">Creado por Diego Flores <i class='bx bx-code-curly bx-tada' ></i> </a>
         </div>
     </footer>
+
+    <script src="root/asset/js/main.js"></script>
 </body>
 </html>
