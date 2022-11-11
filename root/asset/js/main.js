@@ -5,7 +5,6 @@ const btnLogin = document.getElementById('btn-burger-login');
 const showLogin = document.getElementById('login');
 const btnBack = document.getElementById('btn-back');
 
-
 btnMenu.addEventListener('click', ()=>{
     showMenu.classList.toggle('show-menu');
     btnMenu.classList.toggle('bx-x')
@@ -18,3 +17,7 @@ btnLogin.addEventListener('click',()=>{
 btnBack.addEventListener('click',()=>{
     showLogin.classList.toggle('show-login');
 })
+
+function redirect(){
+    window.location.href="menu.html"
+}
