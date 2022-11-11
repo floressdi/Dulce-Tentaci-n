@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="root/asset/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="root/asset/img/favicon_io (1)/favicon-32x32.png">
     <title>Dulce Tentación</title>
 </head>
 <body>
@@ -16,31 +17,34 @@
                 <div class="">
                     <h1 class="title md:ml-10">Dulce Tentación</h1>
                 </div>
-                <div class="w-3/6 nav-menu">
-                    <ul class="flex flex-row justify-end  items-center h-full" >
-                        <li class="nav-btn   mx-4 px-2" >Ingresar</li>
-                        <li class="nav-btn mx-4 px-2" >Pedidos</li>
-                        <li class="nav-btn mx-4 px-2">Menu</li>
-                    </ul>
-                </div>
-                <div class="md:hidden flex justify-center items-center">
-                    <i id="bx-menu" class='text-3xl bx bx-menu'></i>
-                </div>    
-            </div>
-            <!-- 
+
+
+                   <!-- 
                 =========== Menu Hambureguesa 🍔==========
              -->
-
-             <!-- lleva nav-menu-burger -->
             <div id="menu-burger" class="nav-menu-burger mt-8  ">
-                <div class="w-4/5 h-full mx-auto flex items-center justify-center">
+                <div class="h-full mx-auto flex items-center justify-center">
                     <ul >
-                        <li class="nav-btn my-5 ">Ingresar</li>
+                        <li id="btn-burger-login" class="nav-btn my-5 ">Ingresar</li>
                         <li class="nav-btn my-5 ">Pedidos</li> 
                         <li class="nav-btn my-5 ">Menu</li>
                     </ul>
                 </div>
             </div>
+                
+                <!-- <div class="w-3/6 nav-menu">
+                    <ul class="flex flex-row justify-end  items-center h-full" >
+                        <li id="btn-burger-login" class="nav-btn   mx-4 px-2" >Ingresar</li>
+                        <li class="nav-btn mx-4 px-2" >Pedidos</li>
+                        <li class="nav-btn mx-4 px-2">Menu</li>
+                    </ul>
+                </div> -->
+                
+                <div class=" flex justify-center items-center">
+                    <i id="bx-menu" class='text-3xl bx bx-menu'></i>
+                </div>    
+            </div>
+         
         </nav>
 
         <div class="logo w-full h-screen flex items-center justify-center">
@@ -49,6 +53,8 @@
     </header>
 
     <main class="">
+
+       
         <!-- 
             PASTELES CUMPLEAÑOS
          -->
@@ -112,6 +118,33 @@
                 <div class="md:flex-1">
                     <img src="root/asset/img/halloween-g16c39e145_1920.jpg" alt="">
                 </div>
+            </div>
+         </section>
+         <!-- ===============
+             Popup Login 
+        -->
+        <section id="login" class="login">
+            <div class="form-login  ">
+
+                <div class="w-4/5 grid content-center justify-items-stretch">
+
+                    <i id="btn-back" class='bx bxs-chevron-left text-4xl p-2 justify-self-start'></i>    
+
+                    <h2 class="text-center text-3xl mb-8" >Bienvenido</h2>
+                </div>
+
+                <div class="input-container ">
+                    <input type="text" class="input-login" placeholder="Correo" >
+                    <label class="label-login"></label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" class="input-login" placeholder="Contraseña">
+                    <label class="label-login"></label>
+                </div>
+
+                <button  class="btn-menu  " value="Sign In"> Ingresar</button>
+
             </div>
         </section>
     </main>

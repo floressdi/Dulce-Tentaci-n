@@ -5,14 +5,13 @@
 /* Variables */
 :root{
     --black: rgb(20,20,20);
-    --white: rgb(250,250,250);
+    --white: rgb(255,255,255);
     --yellow: rgb(238, 215, 11);
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
-
 
 /* 
 ========== Header 
@@ -39,9 +38,10 @@
 }
 
 .nav-menu-burger{
-    width: 100%;
+    width: 40%;
     height: 200px;
     top: -150%;
+    left: 50%;
     position: fixed;
     z-index: 10;
     background-color: var(--white);
@@ -51,7 +51,7 @@
 }
 
 .show-menu{
-    top: 0;
+    top: 2%;
 }
 
 .container-logo{
@@ -60,6 +60,59 @@
     justify-content: center;
 }
 
+/* ===== form login ==== */
+
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white).319;
+    backdrop-filter: blur(10px);
+    position: fixed;    
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -150%;
+    transition: all 250ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+
+.show-login{
+    bottom: 0;
+}
+
+.form-login{
+    width: 85%;
+    height: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-container{
+    width: 85%;
+    margin-bottom: 2em;
+}
+
+.input-login{
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+
+/* 
+==============
+NAV
+==============
+*/
 .title{
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
@@ -96,6 +149,8 @@
     overflow: hidden;
 }
 
+
+/* ============ BTN ============ */
 .btn-menu {
     --color: var(--yellow);
     font-family: inherit;
@@ -149,6 +204,8 @@
     color: var(--yellow);
    }
 
+/* ======= FOOTER ============ */
+
 .footer{ 
     width: 100%;
     height: 250px;
@@ -167,6 +224,7 @@
     flex-direction: column;
 }
 
+/* Media========= */
 @media (max-width:430px){
 
     .title{
@@ -180,8 +238,26 @@
         padding: 0;
     }
 
+    .form-login{
+        height: 65%;
+    }
     .footer{
         flex-direction: column;
         height: 550px;
+    }
+}
+
+@media (min-width:1000px){
+    .form-login{
+        width: 45%;
+        height: 70%;
+    }
+    
+    .nav-menu-burger{
+        width: 15%;
+        left: 75%;
+    } 
+    .input-login{
+        height: 50px;
     }
 }
